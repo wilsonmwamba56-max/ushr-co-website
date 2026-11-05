@@ -44,7 +44,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Discover USHR Co., our approach to professional ushering, event hospitality and protocol services in Kenya.",
+    "Discover Protocol Kenya, our approach to professional ushering, event hospitality and protocol services in Kenya.",
 };
 
 export default function ServicesPage() {
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       <section className="px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-7xl">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-            USHR Co. • What We Do
+            PROTOCOL KENYA • WHAT WE DO
           </p>
 
           <h1 className="max-w-4xl text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl">
@@ -66,9 +66,8 @@ export default function ServicesPage() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/65">
-            From the first guest arrival to the final departure, USHR Co.
-            provides professional ushering, protocol and event staffing
-            designed around your guests and your occasion.
+            From the first guest arrival to the final departure, Protocol Kenya delivers professional 
+            ushering, protocol and hospitality services tailored to make every occasion exceptional.
           </p>
         </div>
       </section>
@@ -124,7 +123,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-400/10 to-blue-500/5 p-8 sm:p-12 lg:p-16">
 
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-            The USHR Difference
+            The Protocol Kenya Difference
           </p>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2">

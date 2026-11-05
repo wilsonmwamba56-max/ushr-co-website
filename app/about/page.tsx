@@ -32,7 +32,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Discover USHR Co., our approach to professional ushering, event hospitality and protocol services in Kenya.",
+    "Discover Protocol Kenya, our approach to professional ushering, event hospitality and protocol services in Kenya.",
 };
 
 export default function Home() {
@@ -69,7 +69,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-8 max-w-xl text-base leading-8 text-white/60 sm:text-lg">
-              USHR Co. delivers refined ushering, protocol and event staffing
+              Protocol Kenya delivers refined ushering, protocol and event staffing
               solutions designed to make every guest feel welcomed, valued and
               professionally attended to.
             </p>
@@ -100,7 +100,7 @@ export default function Home() {
 
               <div className="absolute left-8 top-8">
                 <div className="text-xs uppercase tracking-[0.3em] text-white/40">
-                  USHR Co.
+                  Protocol Kenya
                 </div>
               </div>
 
@@ -160,7 +160,7 @@ export default function Home() {
 
           <div>
             <p className="text-lg leading-8 text-white/60">
-              USHR Co. is a professional ushering and protocol company built
+              Protocol Kenya is a professional ushering and protocol company built
               around one simple idea: exceptional events require exceptional
               people.
             </p>
@@ -175,7 +175,7 @@ export default function Home() {
               href="#contact"
               className="mt-8 inline-flex items-center border-b border-cyan-300 pb-2 text-sm font-bold text-cyan-300"
             >
-              Work with USHR →
+              Work with Protocol Kenya →
             </a>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <div className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-300">
-                The USHR experience
+                The Protocol Kenya experience
               </div>
 
               <h2 className="max-w-3xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">
@@ -256,7 +256,7 @@ export default function Home() {
             </div>
 
             <div className="text-7xl font-black tracking-[-0.08em] text-white/10 sm:text-9xl">
-              USHR
+              Protocol Kenya
             </div>
           </div>
         </div>
@@ -277,13 +277,13 @@ export default function Home() {
             </h2>
 
             <p className="mx-auto mt-7 max-w-xl leading-8 text-white/50">
-              Tell us about your event and let USHR Co. help you create a
+              Tell us about your event and let Protocol Kenya help you create a
               seamless experience from arrival to departure.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <a
-                href="mailto:hello@ushr.co"
+                href="mailto:hello@protocol-kenya.co.ke"
                 className="rounded-full bg-cyan-300 px-8 py-4 text-sm font-black text-[#07111f] transition hover:bg-white"
               >
                 Get in touch
@@ -293,7 +293,7 @@ export default function Home() {
                 href="tel:+254700000000"
                 className="rounded-full border border-white/15 px-8 py-4 text-sm font-bold transition hover:bg-white/5"
               >
-                Call USHR Co.
+                Call Protocol Kenya
               </a>
             </div>
           </div>
@@ -304,12 +304,12 @@ export default function Home() {
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
-            <span className="font-bold text-white/70">USHR Co.</span>
+            <span className="font-bold text-white/70">Protocol Kenya</span>
             <span className="mx-2">•</span>
             Professional Ushering & Protocol
           </div>
 
-          <div>© {new Date().getFullYear()} USHR Co. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Protocol Kenya. All rights reserved.</div>
         </div>
       </footer>
     </main>

@@ -38,7 +38,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Discover USHR Co., our approach to professional ushering, event hospitality and protocol services in Kenya.",
+    "Discover Protocol Kenya, our approach to professional ushering, event hospitality and protocol services in Kenya.",
 };
 
 export default function ExperiencePage() {
@@ -50,7 +50,7 @@ export default function ExperiencePage() {
         <div className="mx-auto max-w-7xl">
 
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-            USHR Co. • Experience
+            Protocol Kenya • Experience
           </p>
 
           <h1 className="max-w-5xl text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl">
@@ -62,7 +62,7 @@ export default function ExperiencePage() {
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/65">
             From intimate celebrations to large-scale corporate occasions,
-            USHR Co. brings professionalism, preparation and presence to
+            Protocol Kenya brings professionalism, preparation and presence to
             every guest interaction.
           </p>
 

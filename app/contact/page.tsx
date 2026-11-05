@@ -4,9 +4,9 @@ import ContactForm from "../../components/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Contact Us",
   description:
-    "Discover USHR Co., our approach to professional ushering, event hospitality and protocol services in Kenya.",
+    "Get in touch with Protocol Kenya, your partner for professional ushering, event hospitality and protocol services in Kenya.",
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl">
 
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-            USHR Co. • Contact
+            Protocol Kenya • Contact
           </p>
 
           <h1 className="max-w-5xl text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl">
@@ -113,7 +113,7 @@ export default function ContactPage() {
       <section className="border-t border-white/10 px-6 py-24 text-center sm:px-10">
 
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-          USHR Co.
+          Protocol Kenya
         </p>
 
         <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-bold sm:text-6xl">

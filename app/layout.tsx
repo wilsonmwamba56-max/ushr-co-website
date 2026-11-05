@@ -69,7 +69,7 @@ export default function RootLayout({
   
 <Image
   src="/protocol-kenya-logo.png"
-  alt="Protocol Kenya Official Logo"
+  alt="Protocol Kenya"
   width={1197}
   height={490}
   className="h-auto w-[145px] object-contain sm:w-[185px]"
