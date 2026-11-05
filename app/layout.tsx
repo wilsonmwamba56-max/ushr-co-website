@@ -67,14 +67,16 @@ export default function RootLayout({
 
 <Link href="/" className="flex shrink-0 items-center">
   
+
 <Image
-  src="/protocol-kenya-logo.png"
-  alt="Protocol Kenya"
-  width={1197}
-  height={490}
-  className="h-auto w-[145px] object-contain sm:w-[185px]"
+  src="/protocol-kenya-3d-logo.png"
+  alt="Protocol Kenya 3D Logo"
+  width={1940}
+  height={780}
+  className="h-auto w-[160px] object-contain sm:w-[200px]"
   priority
 />
+
 
 </Link>
 

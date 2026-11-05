@@ -16,7 +16,7 @@ export const contentType = "image/png";
 export default async function OpenGraphImage() {
   
 const logo = await readFile(
-  join(process.cwd(), "public", "protocol-kenya-logo.png"),
+  join(process.cwd(), "public", "protocol-kenya-3d-logo.png"),
   "base64"
 );
 
