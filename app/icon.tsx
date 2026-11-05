@@ -26,7 +26,7 @@ export default function Icon() {
           fontWeight: 800,
         }}
       >
-        U
+        PK
       </div>
     ),
     size

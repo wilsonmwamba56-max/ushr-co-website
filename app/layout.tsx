@@ -8,17 +8,15 @@ import MobileMenu from "../components/MobileMenu";
 export const metadata: Metadata = {
   title: {
     default:
-      "USHR Co. | Professional Ushering & Protocol Services in Kenya",
-    template: "%s | USHR Co.",
+      "Protocol Kenya | Professional Ushering, Protocol & Hospitality",
+    template: "%s | Protocol Kenya",
   },
 
   description:
-    "USHR Co. provides professional ushering, VIP protocol, guest reception, corporate event staffing and hospitality services in Nairobi and across Kenya.",
-
-  applicationName: "USHR Co.",
+    "Protocol Kenya provides professional ushering, protocol, hospitality and event staffing services in Nairobi and across Kenya.",
 
   keywords: [
-    "USHR Co.",
+    "Protocol Kenya",
     "Ushering services Kenya",
     "Professional ushers Nairobi",
     "Protocol services Kenya",
@@ -29,10 +27,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "USHR Co. | Professional Ushering & Protocol",
+    title: "Protocol Kenya | Professional Protocol & Events",
     description:
-      "Excellence at every entrance. Professional ushering, protocol and event staffing services in Kenya.",
-    siteName: "USHR Co.",
+      "Professional ushering, protocol and event hospitality services in Kenya.",
+    siteName: "Protocol Kenya",
     locale: "en_KE",
     type: "website",
   },
@@ -42,7 +40,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -69,14 +66,16 @@ export default function RootLayout({
           {/* LOGO */}
 
 <Link href="/" className="flex shrink-0 items-center">
-  <Image
-    src="/ushr-logo.png"
-    alt="USHR Co. Official Logo"
-    width={210}
-    height={70}
-    className="h-auto max-h-[65px] w-[160px] object-contain md:w-[190px]"
-    priority
-  />
+  
+<Image
+  src="/protocol-kenya-logo.png"
+  alt="Protocol Kenya Official Logo"
+  width={1197}
+  height={490}
+  className="h-auto w-[145px] object-contain sm:w-[185px]"
+  priority
+/>
+
 </Link>
 
 

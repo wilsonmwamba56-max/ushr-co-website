@@ -46,7 +46,7 @@ if (!validEmail) {
 
    
 const message = [
-  "Hello USHR Co.,",
+  "Hello Protocol Kenya,",
   "I would like to inquire about your services.",
   "",
   `Name: ${name}`,

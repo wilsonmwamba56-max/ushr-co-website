@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 export const alt =
-  "USHR Co. — Professional Ushering and Protocol Services";
+  "Protocol Kenya — Professional Ushering and Protocol Services";
 
 export const size = {
   width: 1200,
@@ -14,10 +14,12 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function OpenGraphImage() {
-  const logo = await readFile(
-    join(process.cwd(), "public", "ushr-logo.png"),
-    "base64"
-  );
+  
+const logo = await readFile(
+  join(process.cwd(), "public", "protocol-kenya-logo.png"),
+  "base64"
+);
+
 
   return new ImageResponse(
     (
@@ -38,7 +40,7 @@ export default async function OpenGraphImage() {
           width="250"
           height="100"
           style={{ objectFit: "contain" }}
-          alt="USHR Co."
+          alt="protocol Kenya"
         />
 
         <div
