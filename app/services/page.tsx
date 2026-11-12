@@ -1,42 +1,75 @@
 import Link from "next/link";
 
+import Image from "next/image";
+
+
 const services = [
   {
     number: "01",
     title: "Professional Ushering",
+      image: "/images/service-ushering.jpg",
     description:
       "Professional ushers who welcome, guide and assist guests while maintaining a polished and welcoming event environment.",
   },
   {
     number: "02",
     title: "Event Protocol",
+      image: "/images/service-protocol.jpg",
     description:
       "Structured protocol support designed to ensure smooth guest movement, dignified arrivals and seamless event coordination.",
   },
   {
     number: "03",
     title: "Corporate Events",
+      image: "/images/service-corporate.jpg",
     description:
       "Refined guest management and front-of-house support for conferences, launches, meetings, corporate functions and official occasions.",
   },
   {
     number: "04",
     title: "Weddings & Celebrations",
+      image: "/images/service-weddings.jpg",
     description:
       "Elegant ushering and guest coordination that allows couples, families and hosts to focus on celebrating their special occasion.",
   },
   {
     number: "05",
     title: "VIP & Guest Management",
+      image: "/images/service-vip.jpg",
     description:
       "Discreet and professional assistance for VIPs, dignitaries, speakers, special guests and priority attendees.",
   },
   {
     number: "06",
     title: "Event Staffing",
+      image: "/images/service-staffing.jpg",
     description:
       "Reliable event personnel selected and prepared according to the scale, style and requirements of your event.",
   },
+
+{
+  number: "07",
+  title: "Hospitality",
+  image: "/images/service-hospitality.jpg",
+  description:
+    "Warm, polished hospitality support for receptions, conferences, corporate functions and special events, ensuring guests feel comfortable, attended to and well looked after throughout the event.",
+},
+
+{
+  number: "08",
+  title: "Crowd Control",
+  image: "/images/service-crowd.jpg",
+  description:
+    "Professional crowd management, guest flow coordination, queue organization and controlled access to ensure safe, orderly and seamless movement throughout events.",
+},
+{
+  number: "09",
+  title: "Guest Reception",
+  image: "/images/service-reception.jpg",
+  description:
+    "Warm and professional guest reception services, including welcoming attendees, registration, check-in assistance, guest information and guiding visitors to their designated areas.",
+},
+
 ];
 
 import type { Metadata } from "next";
@@ -104,6 +137,19 @@ export default function ServicesPage() {
                     ↗
                   </span>
                 </div>
+
+{/* SERVICE IMAGE */}
+<div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-2xl">
+  <Image
+    src={service.image}
+    alt={`${service.title} illustration`}
+    fill
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    className="object-cover transition-transform duration-500 group-hover:scale-105"
+  />
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07111f]/40 to-transparent" />
+</div>
+
 
                 <h3 className="text-2xl font-bold">
                   {service.title}

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import ContactForm from "../../components/ContactForm";
 
+import Image from "next/image";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -92,6 +94,18 @@ export default function ContactPage() {
                   Nairobi, Kenya
                 </p>
               </div>
+
+{/* CONTACT CALLER IMAGE */}
+<div className="relative mt-8 h-72 w-full max-w-lg overflow-hidden rounded-3xl border border-cyan-400/20 sm:h-80">
+  <Image
+    src="/images/contact-caller.png"
+    alt="Illustration of a Protocol Kenya customer service representative assisting a caller"
+    fill
+    sizes="(max-width: 768px) 100vw, 480px"
+    className="object-cover transition-transform duration-500 hover:scale-105"
+  />
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07111f]/40 to-transparent" />
+</div>
 
             </div>
           </div>

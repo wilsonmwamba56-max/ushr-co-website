@@ -172,6 +172,45 @@ export default function Home() {
         </div>
       </section>
 
+{/* PROTOCOL KENYA VIDEO SHOWCASE */}
+<section className="px-6 py-20 sm:px-10 lg:px-20">
+  <div className="mx-auto max-w-7xl">
+    <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+      PROTOCOL KENYA IN ACTION
+    </p>
+
+    <h2 className="mb-6 text-3xl font-bold text-white sm:text-5xl">
+      Experience Excellence in Motion.
+    </h2>
+
+    <p className="mb-10 max-w-2xl text-lg text-white/70">
+      From the first welcome to the final farewell,
+      we bring professionalism, hospitality and
+      exceptional service to every occasion.
+    </p>
+
+    <div className="overflow-hidden rounded-3xl border border-cyan-400/20 bg-[#0b1829] shadow-2xl">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        preload="metadata"
+        poster="/images/about-team.png"
+        className="aspect-video w-full object-cover"
+      >
+        <source
+          src="/videos/protocol-kenya-showcase.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support video playback.
+      </video>
+    </div>
+  </div>
+</section>
+
+
       {/* SERVICES */}
       <section
         id="services"

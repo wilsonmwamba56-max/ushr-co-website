@@ -11,6 +11,59 @@ export default function ContactForm() {
   const [phone, setPhone] = useState("");
 const [eventDate, setEventDate] = useState("");
 
+const [sendingEmail, setSendingEmail] = useState(false);
+const [emailStatus, setEmailStatus] = useState("");
+
+const sendEmail = async () => {
+  if (
+    !name.trim() ||
+    !email.trim() ||
+    !phone.trim() ||
+    !eventDate ||
+    !eventType ||
+    !details.trim()
+  ) {
+    setEmailStatus("Please complete all fields.");
+    return;
+  }
+
+  setSendingEmail(true);
+  setEmailStatus("");
+
+  try {
+    const response = await fetch("/api/enquiry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        eventDate,
+        eventType,
+        details,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.error || "Unable to send enquiry.");
+    }
+
+    setEmailStatus("Your enquiry was sent successfully!");
+  } catch (error) {
+    setEmailStatus(
+      error instanceof Error
+        ? error.message
+        : "Something went wrong. Please try again."
+    );
+  } finally {
+    setSendingEmail(false);
+  }
+};
+
   const sendWhatsApp = () => {
     if (
   !name.trim() ||
@@ -152,6 +205,25 @@ const message = [
       >
         Send Enquiry via WhatsApp
       </button>
+
+{/* EMAIL ENQUIRY BUTTON */}
+<button
+  type="button"
+  onClick={sendEmail}
+  disabled={sendingEmail}
+  className="w-full rounded-full bg-cyan-400 px-6 py-4 font-bold text-[#07111f] transition hover:bg-cyan-300 disabled:opacity-50"
+>
+  {sendingEmail
+    ? "Sending Enquiry..."
+    : "Send Enquiry via Email"}
+</button>
+
+{emailStatus && (
+  <p role="status" className="text-center text-sm text-white">
+    {emailStatus}
+  </p>
+)}
+
     </div>
   );
 }

@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import ExperienceGallery from "../../components/ExperienceGallery";
+
+
 const experiences = [
   {
     number: "01",
@@ -36,10 +39,11 @@ const experiences = [
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Our Experience",
   description:
     "Discover Protocol Kenya, our approach to professional ushering, event hospitality and protocol services in Kenya.",
 };
+
 
 export default function ExperiencePage() {
   return (
@@ -115,6 +119,8 @@ export default function ExperiencePage() {
 
         </div>
       </section>
+      {/* EXPERIENCE PHOTO GALLERY */}
+<ExperienceGallery />
 
       {/* STATEMENT */}
       <section className="px-6 py-24 sm:px-10 lg:px-20">
